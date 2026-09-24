@@ -1,0 +1,19 @@
+{
+  "name": "vitae",
+  "version": "0.1.0",
+  "description": "Connect AI assistants to Vitae recruiting records, jobs, pipelines, and governed workflows.",
+  "author": {
+    "name": "Vitae.ai",
+    "url": "https://vitae.ai"
+  },
+  "homepage": "https://vitae.ai",
+  "repository": "https://github.com/vitaedotai/agent",
+  "license": "MIT",
+  "keywords": [
+    "vitae",
+    "recruiting",
+    "ats",
+    "crm",
+    "mcp"
+  ]
+}

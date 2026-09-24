@@ -1,0 +1,45 @@
+{
+  "name": "vitae",
+  "version": "0.1.0",
+  "description": "Connect AI assistants to Vitae recruiting records, jobs, pipelines, and governed workflows.",
+  "author": {
+    "name": "Vitae.ai",
+    "url": "https://vitae.ai"
+  },
+  "homepage": "https://vitae.ai",
+  "repository": "https://github.com/vitaedotai/agent",
+  "license": "MIT",
+  "keywords": [
+    "vitae",
+    "recruiting",
+    "ats",
+    "crm",
+    "mcp"
+  ],
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Vitae",
+        "shortDescription": "Recruit with Vitae",
+        "longDescription": "Connect AI assistants to Vitae recruiting records, jobs, pipelines, and governed workflows. Sign in with Vitae OAuth. Changes can require approval in Vitae.",
+        "developerName": "Vitae.ai",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://vitae.ai",
+        "privacyPolicyURL": "https://vitae.ai/privacy",
+        "termsOfServiceURL": "https://vitae.ai/terms",
+        "defaultPrompt": [
+          "Show my open jobs in Vitae.",
+          "Find an existing candidate in my ATS.",
+          "Prepare a shortlist for my selected job."
+        ],
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png"
+      }
+    }
+  }
+}
