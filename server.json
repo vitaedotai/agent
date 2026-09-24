@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.vitae/mcp",
+  "title": "Vitae AI",
+  "description": "Recruiting ATS and CRM tools with OAuth and human approval gates.",
+  "version": "0.1.0",
+  "websiteUrl": "https://docs.vitae.ai/reference/mcp",
+  "repository": {
+    "url": "https://github.com/vitaedotai/agent",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.vitae.ai/mcp"
+    }
+  ]
+}

@@ -1,3 +1,5 @@
-# Client documentation
+# Documentation
 
-Add verified connection and troubleshooting guides here. Document skill installation, connector registration, authentication, and marketplace availability separately. Do not claim client support before verification.
+- [Compatibility and acceptance](compatibility.md)
+- [Data handling](privacy.md)
+- [Package maintenance](../CONTRIBUTING.md)

@@ -1,0 +1,8 @@
+.env*
+.venv/
+__pycache__/
+.worktrees/
+.tmp/
+node_modules/
+build/
+.DS_Store

@@ -1,0 +1,19 @@
+{
+  "name": "vitae",
+  "owner": {
+    "name": "Vitae.ai",
+    "url": "https://github.com/vitaedotai"
+  },
+  "metadata": {
+    "description": "Connect AI assistants to Vitae recruiting records, jobs, pipelines, and governed workflows.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "vitae",
+      "source": "./",
+      "description": "Connect AI assistants to Vitae recruiting records, jobs, pipelines, and governed workflows.",
+      "version": "0.1.0"
+    }
+  ]
+}
