@@ -78,7 +78,7 @@ This installs instructions only. Configure the connector and sign in separately.
 - “Find this candidate in my existing ATS and summarize the evidence relevant to this job.”
 - “Prepare a candidate presentation for this role, including missing information.”
 
-The current public catalog does not expose direct email sending or calendar booking. Skills can draft messages and interview plans; the recruiter completes those actions in Vitae unless a verified, authorized tool supports them. Business-data changes can return a pending approval instead of executing.
+Inspect the live tool catalog before taking an action; available tools depend on the deployed server and the caller's permissions. Skills can draft messages and interview plans. Use a verified tool for a connected action only within the user's authorization; otherwise return a precise handoff for the recruiter to complete in Vitae. Business-data changes can return a pending approval instead of executing.
 
 ## Verification and privacy
 
