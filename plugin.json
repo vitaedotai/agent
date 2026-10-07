@@ -1,7 +1,7 @@
 {
   "name": "vitae",
-  "version": "0.1.0",
-  "description": "Connect AI assistants to Vitae recruiting records, jobs, pipelines, and governed workflows.",
+  "version": "0.2.0",
+  "description": "Recruit with Vitae: connect your workspace and use ten skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations.",
   "author": {
     "name": "Vitae.ai",
     "url": "https://vitae.ai"
@@ -22,7 +22,7 @@
       "interface": {
         "displayName": "Vitae",
         "shortDescription": "Recruit with Vitae",
-        "longDescription": "Connect AI assistants to Vitae recruiting records, jobs, pipelines, and governed workflows. Sign in with Vitae OAuth. Changes can require approval in Vitae.",
+        "longDescription": "Recruit with Vitae: connect your workspace and use ten skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations. Draft recruiting work from supplied context, or sign in with Vitae OAuth to use authorized records. Connected changes can require approval in Vitae.",
         "developerName": "Vitae.ai",
         "category": "Productivity",
         "capabilities": [
@@ -34,8 +34,8 @@
         "termsOfServiceURL": "https://vitae.ai/terms",
         "defaultPrompt": [
           "Show my open jobs in Vitae.",
-          "Find an existing candidate in my ATS.",
-          "Prepare a shortlist for my selected job."
+          "Draft a candidate outreach email using these role and profile facts.",
+          "Prepare an interview kit for this job and scorecard."
         ],
         "logo": "./assets/logo.png",
         "composerIcon": "./assets/logo.png"

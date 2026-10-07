@@ -14,6 +14,9 @@ MANIFESTS=['plugin.json','mcp.json','.mcp.json','server.json','gemini-extension.
            '.grok-plugin/plugin.json','.grok-plugin/marketplace.json',
            '.agents/plugins/marketplace.json']
 ENDPOINT='https://mcp.vitae.ai/mcp'
+SKILLS={'vitae','job-intake','hiring-scorecard','sourcing-strategy',
+        'candidate-screening','candidate-outreach','interview-invitation',
+        'interview-kit','candidate-presentation','recruitment-workflow'}
 
 def walk(value):
     if isinstance(value,dict):
@@ -69,13 +72,28 @@ def validate(root=ROOT):
         codex=docs['.agents/plugins/marketplace.json']['plugins'][0]
         if codex['source']!={'source':'local','path':'./'} or codex['policy']!={'installation':'AVAILABLE','authentication':'ON_INSTALL'}:
             errors.append('invalid Codex source or authentication policy')
-        found=list((root/'skills').glob('*/SKILL.md'))
-        if [p.parent.name for p in found]!=['vitae']:
-            errors.append('agent package must contain only the vitae operating skill')
-        skill_errors,front=validate_skill(root/'skills/vitae/SKILL.md')
-        errors.extend(skill_errors)
-        if front.get('metadata',{}).get('version')!=version:
-            errors.append('skill version drift')
+        catalog=json.loads((root/'catalog.json').read_text())
+        entries=catalog['skills']
+        names=[entry['name'] for entry in entries]
+        found={str(p.relative_to(root)) for p in (root/'skills').glob('*/SKILL.md')}
+        if (catalog['version']!=version or len(names)!=len(set(names))
+            or set(names)!=SKILLS or found!={entry['path'] for entry in entries}):
+            errors.append('skill catalog completeness or version drift')
+        for entry in entries:
+            if entry['path']!=f"skills/{entry['name']}/SKILL.md":
+                errors.append('skill catalog path must match name')
+                continue
+            path=root/entry['path']
+            skill_errors,front=validate_skill(path)
+            errors.extend(skill_errors)
+            if front.get('metadata',{}).get('version')!=version:
+                errors.append(f'{path}: skill version drift')
+            if front.get('description')!=entry['description']:
+                errors.append(f'{path}: catalog description drift')
+            if validate_links(path.parent):
+                errors.append(f'{path}: individual skill has missing or escaping references')
+        if docs['.grok-plugin/plugin.json']['skills']!=[f"./skills/{entry['name']}" for entry in entries]:
+            errors.append('Grok skills do not match catalog')
         snapshot=json.loads((root/'skills/vitae/references/tools.json').read_text())
         tools=snapshot['tools']
         names=[tool['name'] for tool in tools]

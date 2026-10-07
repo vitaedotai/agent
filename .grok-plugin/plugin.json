@@ -1,7 +1,7 @@
 {
   "name": "vitae",
-  "version": "0.1.0",
-  "description": "Connect AI assistants to Vitae recruiting records, jobs, pipelines, and governed workflows.",
+  "version": "0.2.0",
+  "description": "Recruit with Vitae: connect your workspace and use ten skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations.",
   "author": {
     "name": "Vitae.ai",
     "url": "https://vitae.ai"
@@ -17,7 +17,16 @@
     "mcp"
   ],
   "skills": [
-    "./skills/vitae"
+    "./skills/vitae",
+    "./skills/job-intake",
+    "./skills/hiring-scorecard",
+    "./skills/sourcing-strategy",
+    "./skills/candidate-screening",
+    "./skills/candidate-outreach",
+    "./skills/interview-invitation",
+    "./skills/interview-kit",
+    "./skills/candidate-presentation",
+    "./skills/recruitment-workflow"
   ],
   "mcpServers": {
     "vitae": {
