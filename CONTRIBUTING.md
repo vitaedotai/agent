@@ -1,6 +1,6 @@
 # Contributing
 
-Keep connector packaging and the single Vitae operating skill here. Recruiting methods belong in [vitaedotai/skills](https://github.com/vitaedotai/skills).
+Maintain the unified plugin here: connector packaging, app operation, and recruiting methods. See [the recruiting authoring guide](docs/recruiter-authoring.md) and [behavioral cases](evals/recruiting.md). Update `catalog.json` and README when changing a skill; keep resources inside its directory.
 
 ## Validate
 
@@ -22,8 +22,10 @@ CI validates official pinned schemas, connector consistency, portable skill meta
 
 ## Release
 
-Use `plugin.json` as the version authority. Update all manifest versions, marketplace metadata, `server.json`, `skills/vitae/SKILL.md`, and CHANGELOG together. Keep all connector URLs consistent. Submit a scoped PR and require passing CI and independent review.
+Use `plugin.json` as the version authority. Update all manifest versions, marketplace metadata, `server.json`, `catalog.json`, every `skills/*/SKILL.md` version, and CHANGELOG together. Keep all connector URLs consistent. Submit a scoped PR and require passing CI at the current head. Separate model review runs only when the user requests it.
 
 Schemas were pinned from the Genfeed reference package; retain their origins and digests in `schemas/sources.json`. Do not copy its branding, credentials, generated tool catalog, or marketplace acceptance claims.
 
 Run the client rehearsal in [docs/compatibility.md](docs/compatibility.md) before claiming authenticated compatibility. A public listing requires a separate submission; committing a manifest does not publish it.
+
+Build the portable upload with `python3 scripts/package.py`; its allowlist contains public package files and excludes environment files and repository tooling. The package includes all skills and MCP configuration without fetching a second repository at runtime.

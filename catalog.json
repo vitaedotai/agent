@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "skills": [
+    {
+      "name": "vitae",
+      "path": "skills/vitae/SKILL.md",
+      "description": "Operate Vitae through its hosted MCP connector: find ATS candidates and jobs, inspect pipelines, prepare drafts, and handle pending approvals. Use for work in a Vitae workspace, not generic recruiting copywriting."
+    },
+    {
+      "name": "job-intake",
+      "path": "skills/job-intake/SKILL.md",
+      "description": "Turn a recruiting vacancy or hiring-manager conversation into an agreed job brief, with requirements, constraints, and open questions."
+    },
+    {
+      "name": "hiring-scorecard",
+      "path": "skills/hiring-scorecard/SKILL.md",
+      "description": "Build a job-related evaluation scorecard with evidence criteria and anchored ratings before screening or interviews."
+    },
+    {
+      "name": "sourcing-strategy",
+      "path": "skills/sourcing-strategy/SKILL.md",
+      "description": "Translate an agreed hiring brief into candidate search hypotheses, search queries, channels, and a measurable sourcing plan."
+    },
+    {
+      "name": "candidate-screening",
+      "path": "skills/candidate-screening/SKILL.md",
+      "description": "Compare candidate evidence with an agreed role scorecard, identify missing information, and prepare a recruiter review without making automatic hiring decisions."
+    },
+    {
+      "name": "candidate-outreach",
+      "path": "skills/candidate-outreach/SKILL.md",
+      "description": "Write personalized initial recruiting invitations and follow-ups using verified role and candidate facts, with clear calls to action and respectful stop conditions."
+    },
+    {
+      "name": "interview-invitation",
+      "path": "skills/interview-invitation/SKILL.md",
+      "description": "Draft a clear interview invitation or rescheduling message with confirmed stage, time zone, duration, format, participants, and preparation."
+    },
+    {
+      "name": "interview-kit",
+      "path": "skills/interview-kit/SKILL.md",
+      "description": "Prepare a structured interview plan with job-related questions, follow-up probes, evidence notes, and calibrated assessment guidance."
+    },
+    {
+      "name": "candidate-presentation",
+      "path": "skills/candidate-presentation/SKILL.md",
+      "description": "Create a factual candidate shortlist or client presentation from authorized candidate records, role criteria, and screening or interview evidence."
+    },
+    {
+      "name": "recruitment-workflow",
+      "path": "skills/recruitment-workflow/SKILL.md",
+      "description": "Coordinate a recruitment assignment from intake to candidate presentation, select the appropriate recruiter skill, and track evidence, owners, approvals, and next actions."
+    }
+  ]
+}

@@ -1,3 +1,3 @@
 # Vitae
 
-For Vitae tasks, read [the operating skill](skills/vitae/SKILL.md). The extension connects to `https://mcp.vitae.ai/mcp` using OAuth. Install recruiter workflow skills separately from https://github.com/vitaedotai/skills.
+For connected Vitae tasks, read [the operating skill](skills/vitae/SKILL.md). For recruiting drafts, read [the workflow coordinator](skills/recruitment-workflow/SKILL.md) or the relevant specialist listed in [the catalog](catalog.json). Load only the skill needed for the task. All ten skills are bundled. Recruiting drafts can use supplied context without an account; connected actions use `https://mcp.vitae.ai/mcp` and OAuth.

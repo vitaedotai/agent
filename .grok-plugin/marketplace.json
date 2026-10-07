@@ -5,15 +5,15 @@
     "url": "https://github.com/vitaedotai"
   },
   "metadata": {
-    "description": "Connect AI assistants to Vitae recruiting records, jobs, pipelines, and governed workflows.",
-    "version": "0.1.0"
+    "description": "Recruit with Vitae: connect your workspace and use ten skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations.",
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "vitae",
       "source": "./",
-      "description": "Connect AI assistants to Vitae recruiting records, jobs, pipelines, and governed workflows.",
-      "version": "0.1.0"
+      "description": "Recruit with Vitae: connect your workspace and use ten skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations.",
+      "version": "0.2.0"
     }
   ]
 }

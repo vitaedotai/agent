@@ -3,7 +3,7 @@ name: vitae
 description: "Operate Vitae through its hosted MCP connector: find ATS candidates and jobs, inspect pipelines, prepare drafts, and handle pending approvals. Use for work in a Vitae workspace, not generic recruiting copywriting."
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Vitae
@@ -14,7 +14,7 @@ Connect to `https://mcp.vitae.ai/mcp` using Streamable HTTP and the client's OAu
 
 1. Inspect the connected server's tool list. The [public tool snapshot](references/tools.md) is a dated reference, not a guarantee of the caller's permissions or the deployed tool set. Use the live input schema for every call.
 2. Confirm the intended Vitae workspace from the user's request and authenticated context. If the connector cannot expose the workspace identity, ask the user to verify it in Vitae before reading sensitive records or writing. `agent_status` reports the agent provider, not the workspace identity.
-3. Call `agent_status` and `list_jobs` as a read-only connection check. Public tool discovery alone does not prove authenticated access. Do not create a record or run a workflow to test setup.
+3. Use the live catalog's status and job-list read tools as a connection check (`agent_status` and `list_jobs` when listed). Public tool discovery alone does not prove authenticated access. Do not create a record or run a workflow to test setup.
 
 ## Find the right records
 
@@ -43,7 +43,7 @@ Inspect the live catalog for email-send, calendar-booking, and candidate-present
 
 Never use `run_workflow` or `ask_vitae` as a workaround for an unavailable send or booking capability. A workflow execution can cause external effects: inspect its intended behavior and obtain the required authorization. A successful queue response proves it was queued, not that emails were delivered.
 
-For writing and recruiting methods, use separately installed skills from https://github.com/vitaedotai/skills. Those skills can work from supplied context without Vitae. Keep candidate information in the authorized task and workspace; do not place it in public examples, repositories, or telemetry.
+For recruiting methods, use the bundled `recruitment-workflow` coordinator or the relevant specialist: `job-intake`, `hiring-scorecard`, `sourcing-strategy`, `candidate-screening`, `candidate-outreach`, `interview-invitation`, `interview-kit`, or `candidate-presentation`. Drafting can work from supplied context without connecting Vitae. Load only the skill needed for the current task; individual Skills CLI installations may contain only the selected skill. Keep candidate information in the authorized task and workspace; do not place it in public examples, repositories, or telemetry.
 
 ## Report the outcome
 
