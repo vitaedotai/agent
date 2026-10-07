@@ -107,7 +107,7 @@ No local daemon, hooks, or telemetry are installed by this package. Tool argumen
 
 ## Build a directory upload
 
-Run `python3 scripts/package.py` to build `build/vitae-0.2.0.zip`. It contains the portable manifest, MCP configuration, all ten skills, public reference files, and static assets. It downloads no skill content at installation or runtime. A built package is not directory approval; publisher verification and client acceptance are separate checks.
+Run `python3 scripts/package.py` to build `build/vitae-0.2.1.zip`. It contains the portable manifest, MCP configuration, all ten skills, public reference files, and static assets. It downloads no skill content at installation or runtime. A built package is not directory approval; publisher verification and client acceptance are separate checks.
 
 [Vitae.ai](https://vitae.ai) · [MCP setup](https://mcp.vitae.ai) · [Documentation](https://docs.vitae.ai/reference/mcp) · [Contributing](CONTRIBUTING.md)
 

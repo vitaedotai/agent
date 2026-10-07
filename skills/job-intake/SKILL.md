@@ -3,7 +3,7 @@ name: job-intake
 description: "Turn a recruiting vacancy or hiring-manager conversation into an agreed job brief, with requirements, constraints, and open questions."
 license: MIT
 metadata:
-  version: "0.2.0"
+  version: "0.2.1"
 ---
 
 # Job intake

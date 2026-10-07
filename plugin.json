@@ -1,6 +1,6 @@
 {
   "name": "vitae",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Recruit with Vitae: connect your workspace and use ten skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations.",
   "author": {
     "name": "Vitae.ai",
@@ -24,10 +24,12 @@
         "shortDescription": "Recruit with Vitae",
         "longDescription": "Recruit with Vitae: connect your workspace and use ten skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations. Draft recruiting work from supplied context, or sign in with Vitae OAuth to use authorized records. Connected changes can require approval in Vitae.",
         "developerName": "Vitae.ai",
-        "category": "Productivity",
+        "category": "Business & Operations",
         "capabilities": [
-          "Read",
-          "Write"
+          "Find candidates",
+          "Read jobs and pipelines",
+          "Prepare recruiting drafts",
+          "Request approved changes"
         ],
         "websiteURL": "https://vitae.ai",
         "privacyPolicyURL": "https://vitae.ai/privacy",
@@ -38,8 +40,10 @@
           "Prepare an interview kit for this job and scorecard."
         ],
         "logo": "./assets/logo.png",
-        "composerIcon": "./assets/logo.png"
-      }
+        "composerIcon": "./assets/logo.png",
+        "supportURL": "https://github.com/vitaedotai/agent/issues"
+      },
+      "onboardingSkill": "./skills/vitae/SKILL.md"
     }
   }
 }

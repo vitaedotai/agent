@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1
+
+Added the OpenAI support URL, selected Business & Operations for recruiting workflows, clarified the listed capabilities, and designated the bundled Vitae operating skill for onboarding.
+
 ## 0.2.0
 
 Unified the hosted connector, app operating skill and nine recruiting workflows in one Vitae plugin. This repository now owns all ten skills. Added catalog completeness checks, individual-install reference checks, and a reproducible portable OpenAI ZIP. Updated live-capability guidance for invitations and removed the need to install a second recruiting plugin. Directory publication and connected client acceptance remain separate.

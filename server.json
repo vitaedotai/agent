@@ -3,7 +3,7 @@
   "name": "ai.vitae/mcp",
   "title": "Vitae AI",
   "description": "Recruiting ATS and CRM tools with OAuth and human approval gates.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "websiteUrl": "https://docs.vitae.ai/reference/mcp",
   "repository": {
     "url": "https://github.com/vitaedotai/agent",
