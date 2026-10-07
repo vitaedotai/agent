@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Recruit with Vitae: connect your workspace and use ten skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations.",
-    "version": "0.2.1"
+    "version": "0.2.2"
   },
   "plugins": [
     {
       "name": "vitae",
       "source": "./",
       "description": "Recruit with Vitae: connect your workspace and use ten skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations.",
-      "version": "0.2.1"
+      "version": "0.2.2"
     }
   ]
 }

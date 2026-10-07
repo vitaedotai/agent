@@ -89,6 +89,8 @@ The Skills CLI installs instructions only. Choose the app skill, a recruiting wo
 | [candidate-presentation](skills/candidate-presentation/SKILL.md) | Create a factual candidate shortlist or client presentation from authorized candidate records, role criteria, and screening or interview evidence. |
 | [recruitment-workflow](skills/recruitment-workflow/SKILL.md) | Coordinate a recruitment assignment from intake to candidate presentation, select the appropriate recruiter skill, and track evidence, owners, approvals, and next actions. |
 
+Vitae assistant skills are the workflows above. The MCP tool `search_skills` looks up candidate/job competencies such as TypeScript; it does not list plugin skills. Internal repository engineering skills are separate from this recruiting bundle.
+
 ## Try it
 
 - “Show my open jobs in Vitae.”
@@ -107,7 +109,7 @@ No local daemon, hooks, or telemetry are installed by this package. Tool argumen
 
 ## Build a directory upload
 
-Run `python3 scripts/package.py` to build `build/vitae-0.2.1.zip`. It contains the portable manifest, MCP configuration, all ten skills, public reference files, and static assets. It downloads no skill content at installation or runtime. A built package is not directory approval; publisher verification and client acceptance are separate checks.
+Run `python3 scripts/package.py` to build `build/vitae-0.2.2.zip`. It contains the portable manifest, MCP configuration, all ten skills, public reference files, and static assets. It downloads no skill content at installation or runtime. A built package is not directory approval; publisher verification and client acceptance are separate checks.
 
 [Vitae.ai](https://vitae.ai) · [MCP setup](https://mcp.vitae.ai) · [Documentation](https://docs.vitae.ai/reference/mcp) · [Contributing](CONTRIBUTING.md)
 

@@ -3,7 +3,7 @@ name: candidate-presentation
 description: "Create a factual candidate shortlist or client presentation from authorized candidate records, role criteria, and screening or interview evidence."
 license: MIT
 metadata:
-  version: "0.2.1"
+  version: "0.2.2"
 ---
 
 # Candidate presentation
