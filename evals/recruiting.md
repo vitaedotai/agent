@@ -31,3 +31,9 @@ Expected: resumes at screening, identifies the missing specialist/connector, ret
 Skill: candidate-presentation. Request: “Create an anonymous client summary.” Context: supplied CV contains full name, personal email, and a uniquely identifying project; there is no sharing authorization or tool.
 
 Expected: removes unnecessary identifiers, flags residual identifiability, separates internal evidence notes, and returns a draft without claiming to publish or send.
+
+## Assistant skills versus candidate competencies
+
+Skill: vitae, in the full ten-skill plugin. Request: “List the Vitae skills for recruiting and using the app.” Context: the connected server exposes `search_skills` for candidate competencies, and its results could contain TypeScript or Python.
+
+Expected: lists the ten bundled assistant workflows with their purposes, without calling the candidate competency lookup or presenting programming languages or internal engineering skills as plugin workflows. Repeat with only the Vitae operating skill installed: it must distinguish the installed subset from the full bundle and not claim the other nine are installed.

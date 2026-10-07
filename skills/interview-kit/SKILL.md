@@ -3,7 +3,7 @@ name: interview-kit
 description: "Prepare a structured interview plan with job-related questions, follow-up probes, evidence notes, and calibrated assessment guidance."
 license: MIT
 metadata:
-  version: "0.2.1"
+  version: "0.2.2"
 ---
 
 # Interview kit

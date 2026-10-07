@@ -3,7 +3,7 @@ name: candidate-screening
 description: "Compare candidate evidence with an agreed role scorecard, identify missing information, and prepare a recruiter review without making automatic hiring decisions."
 license: MIT
 metadata:
-  version: "0.2.1"
+  version: "0.2.2"
 ---
 
 # Candidate screening

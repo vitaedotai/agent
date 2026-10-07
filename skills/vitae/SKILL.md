@@ -3,12 +3,31 @@ name: vitae
 description: "Operate Vitae through its hosted MCP connector: find ATS candidates and jobs, inspect pipelines, prepare drafts, and handle pending approvals. Use for work in a Vitae workspace, not generic recruiting copywriting."
 license: MIT
 metadata:
-  version: "0.2.1"
+  version: "0.2.2"
 ---
 
 # Vitae
 
 Connect to `https://mcp.vitae.ai/mcp` using Streamable HTTP and the client's OAuth flow. Setup guidance is at https://mcp.vitae.ai. Never ask for passwords, cookies, tokens, or verification codes in chat. On an authentication failure, use the client's sign-in flow. Do not search local files for credentials or change accounts to bypass a permission failure.
+
+## List Vitae assistant skills
+
+When a user asks which Vitae plugin skills or recruiting workflows are available, describe the bundled assistant skills below. This is a package question: do not call `search_skills` or another candidate/job competency lookup to answer it. `search_skills` searches professional competencies such as TypeScript, Python, sales, or interviewing for candidate profiles; those values are not installed assistant skills.
+
+The complete Vitae plugin bundles:
+
+- `vitae`: connect, get oriented, find records, prepare changes, and handle approvals.
+- `job-intake`: agree the role brief and outstanding questions.
+- `hiring-scorecard`: define job-related evidence criteria and anchored ratings.
+- `sourcing-strategy`: plan queries, channels, and a measurable search.
+- `candidate-screening`: compare recorded evidence with the role criteria for recruiter review.
+- `candidate-outreach`: draft factual, personalized outreach and follow-ups.
+- `interview-invitation`: draft invitations and rescheduling messages from confirmed details.
+- `interview-kit`: prepare structured questions and assessment guidance.
+- `candidate-presentation`: prepare factual shortlists and client presentations.
+- `recruitment-workflow`: coordinate the assignment and choose the next specialist skill.
+
+Individual skill installs may contain a subset. Report the skills actually available in the current client, and distinguish the full bundle from that subset. Repository engineering skills such as `typescript-expert` are for building software and are not part of the Vitae recruiting plugin.
 
 ## Establish context
 

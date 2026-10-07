@@ -3,7 +3,7 @@ name: interview-invitation
 description: "Draft a clear interview invitation or rescheduling message with confirmed stage, time zone, duration, format, participants, and preparation."
 license: MIT
 metadata:
-  version: "0.2.1"
+  version: "0.2.2"
 ---
 
 # Interview invitation

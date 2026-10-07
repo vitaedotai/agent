@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2
+
+Clarified how to list the ten bundled assistant skills. Candidate/job competencies returned by `search_skills` and internal engineering skills are separate catalogs, and must not be presented as Vitae plugin workflows.
+
 ## 0.2.1
 
 Added the OpenAI support URL, selected Business & Operations for recruiting workflows, clarified the listed capabilities, and designated the bundled Vitae operating skill for onboarding.

@@ -3,7 +3,7 @@ name: candidate-outreach
 description: "Write personalized initial recruiting invitations and follow-ups using verified role and candidate facts, with clear calls to action and respectful stop conditions."
 license: MIT
 metadata:
-  version: "0.2.1"
+  version: "0.2.2"
 ---
 
 # Candidate outreach

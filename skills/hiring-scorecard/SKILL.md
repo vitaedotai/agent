@@ -3,7 +3,7 @@ name: hiring-scorecard
 description: "Build a job-related evaluation scorecard with evidence criteria and anchored ratings before screening or interviews."
 license: MIT
 metadata:
-  version: "0.2.1"
+  version: "0.2.2"
 ---
 
 # Hiring scorecard
