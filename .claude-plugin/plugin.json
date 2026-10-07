@@ -8,6 +8,11 @@
   },
   "homepage": "https://vitae.ai",
   "repository": "https://github.com/vitaedotai/agent",
+  "displayName": "Vitae",
+  "privacyPolicyUrl": "https://vitae.ai/privacy",
+  "supportUrl": "https://github.com/vitaedotai/agent/issues",
+  "documentationUrl": "https://docs.vitae.ai/reference/mcp",
+  "termsOfServiceUrl": "https://vitae.ai/terms",
   "license": "MIT",
   "keywords": [
     "vitae",

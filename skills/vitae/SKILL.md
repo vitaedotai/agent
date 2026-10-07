@@ -37,7 +37,9 @@ After a successful mutation, read back the resulting record when a read tool exi
 
 ## Outreach and interviews
 
-The public catalog currently has no direct email-send, calendar-booking, or candidate-presentation publishing tool. Draft those deliverables and hand them back to the recruiter in Vitae. `import_campaign_contacts` adds contacts to an existing campaign; it does not send an invitation and may expose contacts to the campaign's configured automation. Use it only for an explicitly requested import into a verified campaign.
+Inspect the live catalog for email-send, calendar-booking, and candidate-presentation publishing capabilities. Draft the deliverable first. Use a verified tool only for the specific action the user authorized, within its live schema and Vitae's approval requirements. If that tool is unavailable, hand the draft and precise next step back to the recruiter in Vitae. A successful tool-list scan does not prove that an action executed.
+
+`import_campaign_contacts`, when available, adds contacts to an existing campaign; it does not send an invitation and may expose contacts to the campaign's configured automation. Use it only for an explicitly requested import into a verified campaign.
 
 Never use `run_workflow` or `ask_vitae` as a workaround for an unavailable send or booking capability. A workflow execution can cause external effects: inspect its intended behavior and obtain the required authorization. A successful queue response proves it was queued, not that emails were delivered.
 
