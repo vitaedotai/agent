@@ -5,6 +5,16 @@ import subprocess
 from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
+# OpenAI's portal reads OAuth settings from the server entry in mcp.json. The
+# portable schema forbids extra keys there, so only the upload ZIP carries them.
+OPENAI_AUTH = {'com.openai': {'auth': {'type': 'oauth', 'client': {'mode': 'cimd'}}}}
+
+
+def openai_mcp(root):
+    config = json.loads((root / 'mcp.json').read_text())
+    for server in config['mcpServers'].values():
+        server['extensions'] = OPENAI_AUTH
+    return (json.dumps(config, indent=2) + '\n').encode()
 
 
 def package(root=ROOT):
@@ -29,7 +39,8 @@ def package(root=ROOT):
             info = ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
             info.compress_type = ZIP_DEFLATED
             info.external_attr = 0o100644 << 16
-            archive.writestr(info, (root / name).read_bytes())
+            data = openai_mcp(root) if name == 'mcp.json' else (root / name).read_bytes()
+            archive.writestr(info, data)
     return output
 
 

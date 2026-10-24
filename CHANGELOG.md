@@ -2,7 +2,7 @@
 
 ## 0.2.3
 
-Declared OAuth in the portable `mcp.json` (`extensions["com.openai"].auth`, client metadata document mode) so OpenAI's portal can authenticate against the hosted connector instead of reporting authentication unavailable.
+The OpenAI upload ZIP now declares OAuth for the hosted connector (`extensions["com.openai"].auth`, client metadata document mode) so the portal can authenticate instead of reporting authentication unavailable. The portable `mcp.json` is unchanged.
 
 ## 0.2.2
 
