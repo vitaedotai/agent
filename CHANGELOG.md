@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3
+
+The OpenAI upload ZIP now declares OAuth for the hosted connector (`extensions["com.openai"].auth`, client metadata document mode) so the portal can authenticate instead of reporting authentication unavailable. The portable `mcp.json` is unchanged.
+
 ## 0.2.2
 
 Clarified how to list the ten bundled assistant skills. Candidate/job competencies returned by `search_skills` and internal engineering skills are separate catalogs, and must not be presented as Vitae plugin workflows.
