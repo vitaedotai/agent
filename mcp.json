@@ -3,7 +3,17 @@
   "mcpServers": {
     "vitae": {
       "type": "streamable-http",
-      "url": "https://mcp.vitae.ai/mcp"
+      "url": "https://mcp.vitae.ai/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "cimd"
+            }
+          }
+        }
+      }
     }
   }
 }
