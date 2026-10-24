@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.4
+
+The OpenAI manifest now carries the review test cases (five positive, three negative) so the upload ZIP supplies them to the portal. Reviewer credentials stay in the portal and are never stored in this repository.
+
 ## 0.2.3
 
 The OpenAI upload ZIP now declares OAuth for the hosted connector (`extensions["com.openai"].auth`, client metadata document mode) so the portal can authenticate instead of reporting authentication unavailable. The portable `mcp.json` is unchanged.

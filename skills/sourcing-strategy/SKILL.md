@@ -3,7 +3,7 @@ name: sourcing-strategy
 description: "Translate an agreed hiring brief into candidate search hypotheses, search queries, channels, and a measurable sourcing plan."
 license: MIT
 metadata:
-  version: "0.2.3"
+  version: "0.2.4"
 ---
 
 # Sourcing strategy
