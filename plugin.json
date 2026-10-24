@@ -51,42 +51,31 @@
             {
               "description": "Read the recruiting dashboard",
               "prompt": "Show my Vitae dashboard.",
-              "tools_triggered": [
-                "get_dashboard"
-              ],
+              "tools_triggered": "get_dashboard",
               "expected_behavior": "Returns the recruiting counters for the signed-in workspace (pipeline and activity totals) in a short summary."
             },
             {
               "description": "List open jobs",
               "prompt": "List my open jobs in Vitae.",
-              "tools_triggered": [
-                "list_jobs"
-              ],
+              "tools_triggered": "list_jobs",
               "expected_behavior": "Lists the workspace's jobs with title and status."
             },
             {
               "description": "Search saved candidates",
               "prompt": "Search my candidates for engineer.",
-              "tools_triggered": [
-                "search_ats_candidates"
-              ],
+              "tools_triggered": "search_ats_candidates",
               "expected_behavior": "Returns candidates saved in the workspace whose profile matches engineer, with names and key details."
             },
             {
               "description": "Read a job pipeline",
               "prompt": "Show the candidates in the pipeline for my first open job.",
-              "tools_triggered": [
-                "list_jobs",
-                "list_candidates_in_pipeline"
-              ],
+              "tools_triggered": "list_jobs, list_candidates_in_pipeline",
               "expected_behavior": "Finds the job, then lists its candidates grouped by pipeline stage."
             },
             {
               "description": "Create a job draft for approval",
               "prompt": "Draft a new job in Vitae: Senior Backend Engineer, remote, full time.",
-              "tools_triggered": [
-                "create_job_draft"
-              ],
+              "tools_triggered": "create_job_draft",
               "expected_behavior": "Creates a job draft in Vitae that stays in draft until a person publishes it, and says so. Nothing is published."
             }
           ],

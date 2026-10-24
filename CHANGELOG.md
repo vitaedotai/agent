@@ -2,7 +2,7 @@
 
 ## 0.2.4
 
-The OpenAI manifest now carries the review test cases (five positive, three negative) so the upload ZIP supplies them to the portal. Reviewer credentials stay in the portal and are never stored in this repository.
+The OpenAI manifest now carries the review test cases (five positive, three negative) so the upload ZIP supplies them to the portal. Reviewer credentials stay in the portal and are never stored in this repository. `tools_triggered` is a comma-separated string, as the portal requires.
 
 ## 0.2.3
 
