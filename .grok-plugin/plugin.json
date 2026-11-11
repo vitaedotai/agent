@@ -1,7 +1,7 @@
 {
   "name": "vitae",
-  "version": "0.2.4",
-  "description": "Recruit with Vitae: connect your workspace and use ten skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations.",
+  "version": "0.3.0",
+  "description": "Recruit with Vitae: connect your workspace and use eleven skills for app guidance, intake, sourcing, screening, outreach, interviews, and presentations.",
   "author": {
     "name": "Vitae.ai",
     "url": "https://vitae.ai"
@@ -19,6 +19,7 @@
   "skills": [
     "./skills/vitae",
     "./skills/job-intake",
+    "./skills/job-ad-anonymity",
     "./skills/hiring-scorecard",
     "./skills/sourcing-strategy",
     "./skills/candidate-screening",

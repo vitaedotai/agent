@@ -3,7 +3,7 @@ name: vitae
 description: "Operate Vitae through its hosted MCP connector: find ATS candidates and jobs, inspect pipelines, prepare drafts, and handle pending approvals. Use for work in a Vitae workspace, not generic recruiting copywriting."
 license: MIT
 metadata:
-  version: "0.2.4"
+  version: "0.3.0"
 ---
 
 # Vitae
@@ -18,6 +18,7 @@ The complete Vitae plugin bundles:
 
 - `vitae`: connect, get oriented, find records, prepare changes, and handle approvals.
 - `job-intake`: agree the role brief and outstanding questions.
+- `job-ad-anonymity`: check an advert for client names, people and contact details before it is published.
 - `hiring-scorecard`: define job-related evidence criteria and anchored ratings.
 - `sourcing-strategy`: plan queries, channels, and a measurable search.
 - `candidate-screening`: compare recorded evidence with the role criteria for recruiter review.
@@ -62,7 +63,7 @@ Inspect the live catalog for email-send, calendar-booking, and candidate-present
 
 Never use `run_workflow` or `ask_vitae` as a workaround for an unavailable send or booking capability. A workflow execution can cause external effects: inspect its intended behavior and obtain the required authorization. A successful queue response proves it was queued, not that emails were delivered.
 
-For recruiting methods, use the bundled `recruitment-workflow` coordinator or the relevant specialist: `job-intake`, `hiring-scorecard`, `sourcing-strategy`, `candidate-screening`, `candidate-outreach`, `interview-invitation`, `interview-kit`, or `candidate-presentation`. Drafting can work from supplied context without connecting Vitae. Load only the skill needed for the current task; individual Skills CLI installations may contain only the selected skill. Keep candidate information in the authorized task and workspace; do not place it in public examples, repositories, or telemetry.
+For recruiting methods, use the bundled `recruitment-workflow` coordinator or the relevant specialist: `job-intake`, `job-ad-anonymity`, `hiring-scorecard`, `sourcing-strategy`, `candidate-screening`, `candidate-outreach`, `interview-invitation`, `interview-kit`, or `candidate-presentation`. Drafting can work from supplied context without connecting Vitae. Load only the skill needed for the current task; individual Skills CLI installations may contain only the selected skill. Keep candidate information in the authorized task and workspace; do not place it in public examples, repositories, or telemetry.
 
 ## Report the outcome
 

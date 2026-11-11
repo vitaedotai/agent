@@ -14,7 +14,7 @@ MANIFESTS=['plugin.json','mcp.json','.mcp.json','server.json','gemini-extension.
            '.grok-plugin/plugin.json','.grok-plugin/marketplace.json',
            '.agents/plugins/marketplace.json']
 ENDPOINT='https://mcp.vitae.ai/mcp'
-SKILLS={'vitae','job-intake','hiring-scorecard','sourcing-strategy',
+SKILLS={'vitae','job-intake','job-ad-anonymity','hiring-scorecard','sourcing-strategy',
         'candidate-screening','candidate-outreach','interview-invitation',
         'interview-kit','candidate-presentation','recruitment-workflow'}
 

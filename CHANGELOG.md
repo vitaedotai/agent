@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+
+Added the `job-ad-anonymity` skill: before a job advert is published or sent to job boards, check the public advert fields for client names, client staff, contact details and internal notes, and suggest anonymised wording. It requires the public advert title and description rather than internal job fields, and states that adverts already live must be replaced on each board. Updated the bundle from ten to eleven skills, the catalog, the Grok skill list, the routing table, and the validation checks.
+
 ## 0.2.4
 
 The OpenAI manifest now carries the review test cases (five positive, three negative) so the upload ZIP supplies them to the portal. Reviewer credentials stay in the portal and are never stored in this repository. `tools_triggered` is a comma-separated string, as the portal requires.

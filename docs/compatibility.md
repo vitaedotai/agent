@@ -4,13 +4,13 @@
 
 | Surface | Files or path | Status |
 | --- | --- | --- |
-| Portable Agent Plugins | `plugin.json`, `mcp.json`, ten `skills/*` folders | Packaged; validate against pinned schemas |
+| Portable Agent Plugins | `plugin.json`, `mcp.json`, eleven `skills/*` folders | Packaged; validate against pinned schemas |
 | Claude Code | `.claude-plugin`, `.mcp.json` | Packaged; authenticated client rehearsal pending |
 | Codex | `.agents/plugins/marketplace.json`, portable package | Packaged; authenticated client rehearsal pending |
 | Cursor | `.cursor-plugin` | Packaged; authenticated client rehearsal pending |
 | Grok Build | `.grok-plugin` | Packaged; authenticated client rehearsal pending |
 | Gemini CLI | `gemini-extension.json`, `GEMINI.md` | Packaged; authenticated client rehearsal pending |
-| Skills CLI | Ten individually selectable skills | Skill-only installation; does not register MCP |
+| Skills CLI | Eleven individually selectable skills | Skill-only installation; does not register MCP |
 
 No public marketplace approval, registry publication, or authenticated client acceptance is implied by these files. The package's registry descriptor version is independent of the deployed server descriptor version. Server deployment is outside this repository.
 
@@ -22,7 +22,7 @@ The tool snapshot in `skills/vitae/references/tools.json` comes from unauthentic
 
 Record client version, OS, date, package commit, and outcome. Use a designated demonstration workspace.
 
-1. Install the package or explicitly install the skill plus connector. Confirm all ten skills are visible after plugin installation; a Skills CLI installation should expose only the selected skills.
+1. Install the package or explicitly install the skill plus connector. Confirm all eleven skills are visible after plugin installation; a Skills CLI installation should expose only the selected skills.
 2. Complete OAuth in the client's browser flow and select the intended workspace.
 3. List tools, then use live status and job-list read tools (`agent_status` and `list_jobs` when listed). Confirm only the intended workspace's records appear.
 4. Ask for a job and candidate summary using supplied IDs or returned search results. Check IDs and claims against source records.
