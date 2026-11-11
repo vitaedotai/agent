@@ -64,7 +64,7 @@ class ValidationTests(unittest.TestCase):
             server=json.loads(archive.read('mcp.json'))['mcpServers']['vitae']
             self.assertEqual(server['extensions']['com.openai']['auth'],{'type':'oauth','client':{'mode':'cimd'}})
             self.assertNotIn('extensions',json.loads((self.root/'mcp.json').read_text())['mcpServers']['vitae'])
-            self.assertEqual(sum(name.endswith('/SKILL.md') for name in names),10)
+            self.assertEqual(sum(name.endswith('/SKILL.md') for name in names),11)
             self.assertNotIn('skills/vitae/.env',names)
             self.assertFalse(any(name.startswith('scripts/') for name in names))
 

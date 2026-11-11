@@ -1,5 +1,5 @@
 {
-  "version": "0.2.4",
+  "version": "0.3.0",
   "skills": [
     {
       "name": "vitae",
@@ -10,6 +10,11 @@
       "name": "job-intake",
       "path": "skills/job-intake/SKILL.md",
       "description": "Turn a recruiting vacancy or hiring-manager conversation into an agreed job brief, with requirements, constraints, and open questions."
+    },
+    {
+      "name": "job-ad-anonymity",
+      "path": "skills/job-ad-anonymity/SKILL.md",
+      "description": "Check a job advert before it is published or sent to job boards for client names, people, contact details and internal notes, then suggest anonymised wording."
     },
     {
       "name": "hiring-scorecard",

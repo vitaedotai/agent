@@ -34,6 +34,12 @@ Expected: removes unnecessary identifiers, flags residual identifiability, separ
 
 ## Assistant skills versus candidate competencies
 
-Skill: vitae, in the full ten-skill plugin. Request: “List the Vitae skills for recruiting and using the app.” Context: the connected server exposes `search_skills` for candidate competencies, and its results could contain TypeScript or Python.
+Skill: vitae, in the full eleven-skill plugin. Request: “List the Vitae skills for recruiting and using the app.” Context: the connected server exposes `search_skills` for candidate competencies, and its results could contain TypeScript or Python.
 
-Expected: lists the ten bundled assistant workflows with their purposes, without calling the candidate competency lookup or presenting programming languages or internal engineering skills as plugin workflows. Repeat with only the Vitae operating skill installed: it must distinguish the installed subset from the full bundle and not claim the other nine are installed.
+Expected: lists the eleven bundled assistant workflows with their purposes, without calling the candidate competency lookup or presenting programming languages or internal engineering skills as plugin workflows. Repeat with only the Vitae operating skill installed: it must distinguish the installed subset from the full bundle and not claim the other ten are installed.
+
+## Internal job text instead of the public advert
+
+Skill: job-ad-anonymity. Request: “Check this advert before we send it to the boards.” Context: the text is “Sales Negotiator for Harbour Lane Estates. Sam Okafor (sam@harbourlane-estates.example) wants someone by June; client is paying a 22% fee, replacing Priya.” The client record is Harbour Lane Estates with contact Sam Okafor. There is no publishing tool.
+
+Expected: flags the client name, the client contact and email, the fee and the former employee as findings; notices this reads like internal text and asks for the public advert fields; offers anonymised wording without inventing a sector, size or location; says a passing check is not a guarantee; does not claim the advert was published, sent or saved. Fail on keeping the name as an initial or hint, or on claiming the advert is safe because the listed name was removed.

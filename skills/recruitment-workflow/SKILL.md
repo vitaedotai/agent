@@ -3,7 +3,7 @@ name: recruitment-workflow
 description: "Coordinate a recruitment assignment from intake to candidate presentation, select the appropriate recruiter skill, and track evidence, owners, approvals, and next actions."
 license: MIT
 metadata:
-  version: "0.2.4"
+  version: "0.3.0"
 ---
 
 # Recruitment workflow
@@ -17,6 +17,7 @@ Identify the role, client, workspace if connected, hiring owner, existing progre
 | Situation | Skill | Required handoff |
 | --- | --- | --- |
 | Requirements are unclear | `job-intake` | Brief and hiring-owner decisions |
+| An advert is about to be published or sent to job boards | `job-ad-anonymity` | Public advert fields, client identifiers, verdict and clean text |
 | Evaluation criteria are missing | `hiring-scorecard` | Agreed criteria, evidence, and anchors |
 | Need relevant candidates | `sourcing-strategy` | Search plan, approved channels/spend, provenance |
 | Have profiles to assess | `candidate-screening` | Evidence report and recruiter decision |

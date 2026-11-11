@@ -4,7 +4,7 @@
 
 Find candidates, inspect jobs and pipelines, and prepare recruiting work from your assistant.
 
-One **Vitae** plugin bundles the hosted MCP connector, app usage and onboarding guidance, and nine recruiting workflows. Install it once to work with Vitae and prepare recruiting artifacts. This repository is the canonical source for all ten skills; no second plugin or runtime download of another repository is required.
+One **Vitae** plugin bundles the hosted MCP connector, app usage and onboarding guidance, and ten recruiting workflows. Install it once to work with Vitae and prepare recruiting artifacts. This repository is the canonical source for all eleven skills; no second plugin or runtime download of another repository is required.
 
 ## Connect
 
@@ -50,11 +50,11 @@ Add the remote server in Cursor's MCP settings:
 {"mcpServers":{"vitae":{"url":"https://mcp.vitae.ai/mcp"}}}
 ```
 
-This connects tools only. Install selected skills with the Skills CLI below, or install the native plugin to get all ten. This repository also includes a native Cursor plugin manifest; it does not imply a public Cursor marketplace listing.
+This connects tools only. Install selected skills with the Skills CLI below, or install the native plugin to get all eleven. This repository also includes a native Cursor plugin manifest; it does not imply a public Cursor marketplace listing.
 
 ### Grok
 
-For Grok chat, add a custom connector with the MCP URL and authenticate. Grok Build packaging is in `.grok-plugin/`, with all ten skills and the hosted connector. Chat connectors and Build plugins are separate installation surfaces. No public Grok marketplace listing is claimed.
+For Grok chat, add a custom connector with the MCP URL and authenticate. Grok Build packaging is in `.grok-plugin/`, with all eleven skills and the hosted connector. Chat connectors and Build plugins are separate installation surfaces. No public Grok marketplace listing is claimed.
 
 ### Gemini CLI
 
@@ -72,7 +72,7 @@ bunx skills add vitaedotai/agent --skill candidate-outreach
 bunx skills add vitaedotai/agent --list
 ```
 
-The Skills CLI installs instructions only. Choose the app skill, a recruiting workflow, or all ten. Recruiting drafts can use supplied context without an account. Configure the connector and complete OAuth when you need connected Vitae actions.
+The Skills CLI installs instructions only. Choose the app skill, a recruiting workflow, or all eleven. Recruiting drafts can use supplied context without an account. Configure the connector and complete OAuth when you need connected Vitae actions.
 
 ## Included skills
 
@@ -80,6 +80,7 @@ The Skills CLI installs instructions only. Choose the app skill, a recruiting wo
 | --- | --- |
 | [vitae](skills/vitae/SKILL.md) | Operate Vitae through its hosted MCP connector: find ATS candidates and jobs, inspect pipelines, prepare drafts, and handle pending approvals. Use for work in a Vitae workspace, not generic recruiting copywriting. |
 | [job-intake](skills/job-intake/SKILL.md) | Turn a recruiting vacancy or hiring-manager conversation into an agreed job brief, with requirements, constraints, and open questions. |
+| [job-ad-anonymity](skills/job-ad-anonymity/SKILL.md) | Check a job advert before it is published or sent to job boards for client names, people, contact details and internal notes, then suggest anonymised wording. |
 | [hiring-scorecard](skills/hiring-scorecard/SKILL.md) | Build a job-related evaluation scorecard with evidence criteria and anchored ratings before screening or interviews. |
 | [sourcing-strategy](skills/sourcing-strategy/SKILL.md) | Translate an agreed hiring brief into candidate search hypotheses, search queries, channels, and a measurable sourcing plan. |
 | [candidate-screening](skills/candidate-screening/SKILL.md) | Compare candidate evidence with an agreed role scorecard, identify missing information, and prepare a recruiter review without making automatic hiring decisions. |
@@ -109,7 +110,7 @@ No local daemon, hooks, or telemetry are installed by this package. Tool argumen
 
 ## Build a directory upload
 
-Run `python3 scripts/package.py` to build `build/vitae-0.2.4.zip`. It contains the portable manifest, MCP configuration, all ten skills, public reference files, and static assets. It downloads no skill content at installation or runtime. A built package is not directory approval; publisher verification and client acceptance are separate checks.
+Run `python3 scripts/package.py` to build `build/vitae-0.3.0.zip`. It contains the portable manifest, MCP configuration, all eleven skills, public reference files, and static assets. It downloads no skill content at installation or runtime. A built package is not directory approval; publisher verification and client acceptance are separate checks.
 
 [Vitae.ai](https://vitae.ai) · [MCP setup](https://mcp.vitae.ai) · [Documentation](https://docs.vitae.ai/reference/mcp) · [Contributing](CONTRIBUTING.md)
 
