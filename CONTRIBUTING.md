@@ -1,6 +1,6 @@
 # Contributing
 
-Maintain the unified plugin here: connector packaging, app operation, and recruiting methods. See [the recruiting authoring guide](docs/recruiter-authoring.md) and [behavioral cases](evals/recruiting.md). Update `catalog.json` and README when changing a skill; keep resources inside its directory.
+Maintain the unified plugin here: connector packaging, app operation, and recruiting methods. See [the recruiting authoring guide](docs/recruiter-authoring.md) and [behavioral cases](evals/recruiting.md), which `python3 scripts/run_evals.py` runs against a model (needs `ANTHROPIC_API_KEY`; CI never calls one). Update `catalog.json` and README when changing a skill; keep resources inside its directory.
 
 ## Validate
 
