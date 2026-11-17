@@ -1,6 +1,15 @@
 # Behavioral evaluation cases
 
-Run each case using only the named installed skill, the prompt below, and the fictional context. Record model, date, skill commit, actual output, and pass/fail observations in a private review artifact. These are evaluation cases, not a claim that they already passed. No live messages, record changes, or spending are needed.
+These are the cases the runner in `scripts/run_evals.py` scores, kept here in prose for reading. The runnable form is [cases.json](cases.json); a test keeps the two in step, so change both together.
+
+Run them against a model, several times each:
+
+```bash
+ANTHROPIC_API_KEY=... python3 scripts/run_evals.py --dry-run   # plan and call count, no calls
+ANTHROPIC_API_KEY=... python3 scripts/run_evals.py             # 8 cases, 3 runs each (about 48 small calls)
+```
+
+A case passes only when every run passes every statement (`--bar 0.8` relaxes that). Replies are saved under `evals/results/` (untracked); read the failures and some passes, because the grader can be satisfied for the wrong reason. CI checks the case file offline and never calls a model. No live messages, record changes, or spending beyond the model calls are needed, and a passing run is a measurement on one date and model, not a guarantee.
 
 ## Outreach with missing facts
 
